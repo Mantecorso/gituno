@@ -1,0 +1,22 @@
+{
+  "name": "gituno",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mantecorso <luisjuradoquesada@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Mantecorso/gituno",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1"
+  }
+}
