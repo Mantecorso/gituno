@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(81, 81, 230);
 }
 
 a {
@@ -9,12 +10,16 @@ a {
 
 .uno {
   padding-bottom: 10px;
+  background-color: rgb(81, 81, 230);
 }
 
 .dos {
   padding-bottom: 15px;
+  padding-top: 10px;
+  background-color: aliceblue;
 }
 
 .tres {
   padding-bottom: 15px;
+  background-color: aliceblue;
 }
