@@ -1,17 +1,17 @@
-var Controller = require('controller');
-var Csv = require('csv');
+var Controller = require('./controller');
+var Csv = require('../service/csvJSON');
 
-class csvController extends Controller {
+class CsvController extends Controller {
     constructor(req, res, next) {
         super(req, res, next);
     }
 
     csvConvert() {
-        var sitio = this.req.file.destination + "/" + this.req.file.filename;
-        var csv = new Csv(sitio);
+        var file = this.req.file.destination + "/" + this.req.file.filename;
+        var csv = new Csv(file);
             csv.convertToJson()
             .then(data => {
-                console.log(JSON.stringify(data))
+                //console.log(JSON.stringify(data))
                 this.res.json(data)
             })
             .catch(event => {
@@ -21,4 +21,4 @@ class csvController extends Controller {
     }
 }
 
-module.exports = csvController;
+module.exports = CsvController;

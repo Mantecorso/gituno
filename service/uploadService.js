@@ -2,7 +2,7 @@ const Multer = require('multer');
 
 class UploadService {
     constructor() {
-        this.storage = Multer.diskstorage({
+        this.storage = Multer.diskStorage({
             destination: (req, file, cb) => {
                 cb(null, "public/files");
             },

@@ -1,14 +1,4 @@
-const Csv = require('csv');
-
-class CsvToJson {
-    
-    constructor(csvFilePath) {
-        this.csvFilePath = csvFilePath;
-    }
-
-    
-}
-const csv=require('csvtojson');
+let csv = require('csvtojson');
 
 class CsvToJson{
     
@@ -18,7 +8,10 @@ class CsvToJson{
 
     convertToJson(){
        return new Promise((resolve, reject)=>{
-            csv()
+            csv({
+                noheader: true,
+                delimiter:';'
+            })
             .fromFile(this.csvFilePath)
             .then((jsonObj)=>{
                  resolve(jsonObj);

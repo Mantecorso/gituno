@@ -4,6 +4,6 @@ class Controller {
         this.res = res;
         this.next = next;
     }
-};
+}
 
 module.exports = Controller;
